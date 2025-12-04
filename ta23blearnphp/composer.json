@@ -1,5 +1,5 @@
 {
-    "name": "sqtatdev/learnphp",
+    "name": "LiveOF/learnphp",
     "type": "project",
     "license": "WTFPL",
     "autoload": {
@@ -9,8 +9,8 @@
     },
     "authors": [
         {
-            "name": "slava",
-            "email": "slava.ryvlin@gmail.com"
+            "name": "Oleksii Filiakov",
+            "email": "oleksii.filiakov@tptlive.ee"
         }
     ],
     "require": {
