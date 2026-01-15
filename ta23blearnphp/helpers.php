@@ -17,15 +17,9 @@ use App\Models\User;
 function view($viewName, $variables=[]) {
     extract($variables);
     include __DIR__ . "/views/$viewName.php";
+
 }
 
 function redirect($path) {
     header("Location: $path");
-}
-
-function auth() {
-    if(isset($_SESSION['userId'])) {
-        return User::find($_SESSION['userId']);
-    }
-    return false;
 }
