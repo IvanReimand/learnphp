@@ -1,5 +1,5 @@
 {
-    "name": "LiveOF/learnphp",
+    "name": "kaspar.martin.suursa/learnphp",
     "type": "project",
     "license": "WTFPL",
     "autoload": {
@@ -9,8 +9,8 @@
     },
     "authors": [
         {
-            "name": "Oleksii Filiakov",
-            "email": "oleksii.filiakov@tptlive.ee"
+            "name": "Kaspar Martin Suursalu",
+            "email": "kasparsu@gmail.com"
         }
     ],
     "require": {

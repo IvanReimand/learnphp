@@ -19,7 +19,6 @@ Router::get('/posts/view', [PostController::class, 'view']);
 Router::get('/posts/edit', [PostController::class, 'edit']);
 Router::post('/posts/edit', [PostController::class, 'update']);
 Router::get('/posts/delete', [PostController::class, 'destroy']);
-
 Router::get('/register', [AuthController::class, 'registerForm']);
 Router::post('/register', [AuthController::class, 'register']);
 Router::get('/login', [AuthController::class, 'loginForm']);
