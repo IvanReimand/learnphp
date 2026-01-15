@@ -1,5 +1,4 @@
-<?php
-
+<?php 
 namespace App;
 
 use PDO;
@@ -27,25 +26,7 @@ class DB
         $stmt = $this->conn->prepare("SELECT * FROM $table");
         $stmt->execute();
 
-        // set the resulting array to associative
-        $stmt->setFetchMode(PDO::FETCH_CLASS, $class);
-        return $stmt->fetchAll();
-    }
 
-    public function find($table, $class, $id)
-    {
-        $stmt = $this->conn->prepare("SELECT * FROM $table WHERE id=$id");
-        $stmt->execute();
-
-        // set the resulting array to associative
-        $stmt->setFetchMode(PDO::FETCH_CLASS, $class);
-        return $stmt->fetch();
-    }
-
-    public function where($table, $class, $field, $value)
-    {
-        $stmt = $this->conn->prepare("SELECT * FROM $table WHERE $field='$value'");
-        $stmt->execute();
 
         // set the resulting array to associative
         $stmt->setFetchMode(PDO::FETCH_CLASS, $class);

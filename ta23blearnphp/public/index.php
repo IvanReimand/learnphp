@@ -3,13 +3,12 @@ if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js)$/', $_SERVER["REQUEST_URI"])) {
     return false;    // serve the requested resource as-is.
 }
 
-require_once __DIR__ . '/../vendor/autoload.php';
 
-session_start(['cookie_httponly' => true]);
+
+require_once __DIR__ . '/../vendor/autoload.php';
 
 // require_once __DIR__ . '/../src/Router.php';
 // require_once __DIR__ . '/../src/DB.php';
-
 require_once __DIR__ . '/../helpers.php';
 require_once __DIR__ . '/../routes.php';
 
